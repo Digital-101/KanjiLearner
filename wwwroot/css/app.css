@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-
+/* Basic styles */
 html, body {
-    font-family: 'Noto Sans JP', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Kanji Card Styles */
+.card {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Kanji card styles */
 .kanji-card {
     width: 100%;
     max-width: 400px;
@@ -31,7 +42,6 @@ html, body {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 2px solid #dee2e6;
     border-radius: 10px;
@@ -58,96 +68,22 @@ html, body {
     margin-bottom: 20px;
 }
 
-.kanji-info {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.grade-badge {
-    background: #007bff;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.stroke-count {
-    background: #6c757d;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.kanji-details {
-    text-align: left;
+/* Error UI */
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
     width: 100%;
-    padding: 10px;
+    z-index: 1000;
 }
 
-.kanji-details ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.kanji-details li {
-    padding: 5px 0;
-    border-bottom: 1px solid #dee2e6;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .kanji-card {
-        height: 350px;
-    }
-    .kanji-character {
-        font-size: 6rem;
-    }
-}
-
-/* Scrollbar styling */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* Nav Menu Styles */
-.nav-scrollable {
-    height: calc(100vh - 56px);
-    overflow-y: auto;
-}
-
-.top-row {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Responsive */
-@media (max-width: 640px) {
-    .nav-scrollable {
-        height: calc(100vh - 56px);
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
 }

@@ -1,18 +1,40 @@
-﻿@using MudBlazor
-@inherits LayoutComponentBase
+﻿@inherits LayoutComponentBase
 
-<MudThemeProvider />
-<MudDialogProvider />
-<MudSnackbarProvider />
+<style>
+    .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content-main {
+        margin-left: 250px;
+        flex: 1;
+        padding: 20px;
+    }
+
+    .top-row {
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #d6d5d5;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @@media (max-width: 768px) {
+        .content-main {
+            margin-left: 0;
+        }
+    }
+</style>
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    <NavMenu />
 
-    <main>
+    <main class="content-main">
         <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            <a href="https://learn.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
 
         <article class="content px-4">

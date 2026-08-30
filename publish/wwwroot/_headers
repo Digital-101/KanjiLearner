@@ -1,0 +1,14 @@
+/_framework/*
+  Content-Type: application/octet-stream
+
+/_framework/blazor.webassembly.js
+  Content-Type: application/javascript
+
+/*.wasm
+  Content-Type: application/wasm
+
+/*.dll
+  Content-Type: application/octet-stream
+
+/*.dat
+  Content-Type: application/octet-stream

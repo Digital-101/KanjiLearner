@@ -18,8 +18,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Mi
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.pzlq0qczlw.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.gp2mcne8f6.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.FileSystemGlobbing.bmq20vrvql.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Localization.xcslyy3nju.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Localization.Abstractions.6jkolue1ka.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Logging.sceabnebwe.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.ef2lrhidbn.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Options.llivjk1whj.wasm
@@ -28,7 +26,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Mi
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Validation.w1rf8w9vwy.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.JSInterop.r7i6scgm0q.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.4u1gumewbn.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\MudBlazor.ajh2xpsm4k.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.CSharp.6q6v6mynmi.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.VisualBasic.Core.7ahatwz856.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.VisualBasic.sphnc8qe37.wasm
@@ -228,8 +225,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Mi
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.pzlq0qczlw.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.gp2mcne8f6.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.FileSystemGlobbing.bmq20vrvql.wasm.gz
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Localization.xcslyy3nju.wasm.gz
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Localization.Abstractions.6jkolue1ka.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Logging.sceabnebwe.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.ef2lrhidbn.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Options.llivjk1whj.wasm.gz
@@ -238,7 +233,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Mi
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.Extensions.Validation.w1rf8w9vwy.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.JSInterop.r7i6scgm0q.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.4u1gumewbn.wasm.gz
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\MudBlazor.ajh2xpsm4k.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.CSharp.6q6v6mynmi.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.VisualBasic.Core.7ahatwz856.wasm.gz
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\Microsoft.VisualBasic.sphnc8qe37.wasm.gz
@@ -441,8 +435,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.Localization.dll
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.Logging.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.Options.dll
@@ -451,7 +443,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.Extensions.Validation.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.JSInterop.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.JSInterop.WebAssembly.dll
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\MudBlazor.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.CSharp.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.VisualBasic.Core.dll
 C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\Microsoft.VisualBasic.dll
@@ -660,8 +651,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Exte
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.FileProviders.Abstractions.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.FileProviders.Physical.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.FileSystemGlobbing.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.Localization.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.Localization.Abstractions.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.Logging.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.Logging.Abstractions.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.Options.wasm
@@ -670,7 +659,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Exte
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.Extensions.Validation.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.JSInterop.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.JSInterop.WebAssembly.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\MudBlazor.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.CSharp.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.VisualBasic.Core.wasm
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\webcil\Microsoft.VisualBasic.wasm
@@ -854,10 +842,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\scopedcss\projectbund
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\KanjiLearner.genruntimeconfig.cache
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\blazor.build.boot-extension.json
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\dotnet.js
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\tzxjg6is5z-{0}-vxalfe72eb-vxalfe72eb.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\0wz98yz2xy-{0}-6p4nipvmiz-6p4nipvmiz.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\o7k4cxtn0u-{0}-tataz1thwc-tataz1thwc.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\82xf39mquk-{0}-ix7fbq8jut-ix7fbq8jut.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\hxg7jrn1oo-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\ylha1w0cmi-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\u5244us105-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -924,8 +908,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\p1xiz6ymlk
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\lmlgyeo9cn-{0}-pzlq0qczlw-pzlq0qczlw.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\5jotrxj0ea-{0}-gp2mcne8f6-gp2mcne8f6.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\3osbg4ydot-{0}-bmq20vrvql-bmq20vrvql.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\fo6vp7zdx9-{0}-xcslyy3nju-xcslyy3nju.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\vqeeyeks6s-{0}-6jkolue1ka-6jkolue1ka.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\7kogm33mrh-{0}-sceabnebwe-sceabnebwe.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\x4n1099dfd-{0}-ef2lrhidbn-ef2lrhidbn.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\dkhudh84l7-{0}-llivjk1whj-llivjk1whj.gz
@@ -934,7 +916,6 @@ C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\1elfd5z4eh
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\dr5s2xk7x6-{0}-w1rf8w9vwy-w1rf8w9vwy.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\hfn78hj2fc-{0}-r7i6scgm0q-r7i6scgm0q.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\9xbid1yx9z-{0}-4u1gumewbn-4u1gumewbn.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\hf3qahb3d9-{0}-ajh2xpsm4k-ajh2xpsm4k.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\rvfupojjeh-{0}-6q6v6mynmi-6q6v6mynmi.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\l60g7c0m7i-{0}-7ahatwz856-7ahatwz856.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\81caiazkn3-{0}-sphnc8qe37-sphnc8qe37.gz
@@ -1125,14 +1106,16 @@ C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\KanjiLearner.dll
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\refint\KanjiLearner.dll
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\KanjiLearner.pdb
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\ref\KanjiLearner.dll
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.onhkmd162k.wasm
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.sc2xyhae9z.pdb
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\dotnet.zz6osldp2h.js
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.onhkmd162k.wasm.gz
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.sc2xyhae9z.pdb.gz
-C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\dotnet.zz6osldp2h.js.gz
 C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\wwgxamqnl7-{0}-hrk35wqz5q-hrk35wqz5q.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\1y5it9l5p0-{0}-vnahvv1zhp-vnahvv1zhp.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\p3pdbvkn7h-{0}-onhkmd162k-onhkmd162k.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\2uoemqhmha-{0}-sc2xyhae9z-sc2xyhae9z.gz
-C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\kvsipap7xu-{0}-zz6osldp2h-zz6osldp2h.gz
+C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\KanjiLearner.sourcelink.json
+C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.6f7iouypwc.wasm
+C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.lphkcghvuq.pdb
+C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\dotnet.5bxocmb42r.js
+C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.6f7iouypwc.wasm.gz
+C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\KanjiLearner.lphkcghvuq.pdb.gz
+C:\Users\DIGITS\Documents\KanjiLearner\bin\Release\net10.0\wwwroot\_framework\dotnet.5bxocmb42r.js.gz
+C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\82xf39mquk-{0}-q9hfx2xncd-q9hfx2xncd.gz
+C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\1y5it9l5p0-{0}-s57upurqcp-s57upurqcp.gz
+C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\p3pdbvkn7h-{0}-6f7iouypwc-6f7iouypwc.gz
+C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\2uoemqhmha-{0}-lphkcghvuq-lphkcghvuq.gz
+C:\Users\DIGITS\Documents\KanjiLearner\obj\Release\net10.0\compressed\kvsipap7xu-{0}-5bxocmb42r-5bxocmb42r.gz

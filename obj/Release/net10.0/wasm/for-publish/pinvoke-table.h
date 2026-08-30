@@ -257,7 +257,7 @@ wasm_native_to_interp_System_Private_CoreLib_System_Threading_ThreadPool_Backgro
     typedef void (*InterpEntry_T0) (int*);
 
     if (!(InterpEntry_T0)wasm_native_to_interp_ftndescs [0].func) {
-        mono_wasm_marshal_get_managed_wrapper ("System.Private.CoreLib", "System.Threading", "ThreadPool", "BackgroundJobHandler", 100670908, 0);
+        mono_wasm_marshal_get_managed_wrapper ("System.Private.CoreLib", "System.Threading", "ThreadPool", "BackgroundJobHandler", 100670679, 0);
     }
 
     ((InterpEntry_T0)wasm_native_to_interp_ftndescs [0].func) ((int*)wasm_native_to_interp_ftndescs [0].arg);
@@ -268,7 +268,7 @@ wasm_native_to_interp_System_Private_CoreLib_System_Globalization_CalendarData_E
     typedef void (*InterpEntry_T1) (int*, int*, int*);
 
     if (!(InterpEntry_T1)wasm_native_to_interp_ftndescs [1].func) {
-        mono_wasm_marshal_get_managed_wrapper ("System.Private.CoreLib", "System.Globalization", "CalendarData", "EnumCalendarInfoCallback", 100669077, 2);
+        mono_wasm_marshal_get_managed_wrapper ("System.Private.CoreLib", "System.Globalization", "CalendarData", "EnumCalendarInfoCallback", 100668968, 2);
     }
 
     ((InterpEntry_T1)wasm_native_to_interp_ftndescs [1].func) ((int*)&arg0, (int*)&arg1, (int*)wasm_native_to_interp_ftndescs [1].arg);
@@ -292,15 +292,15 @@ wasm_native_to_interp_System_Private_CoreLib_System_Threading_TimerQueue_TimerHa
     typedef void (*InterpEntry_T3) (int*);
 
     if (!(InterpEntry_T3)wasm_native_to_interp_ftndescs [3].func) {
-        mono_wasm_marshal_get_managed_wrapper ("System.Private.CoreLib", "System.Threading", "TimerQueue", "TimerHandler", 100670946, 0);
+        mono_wasm_marshal_get_managed_wrapper ("System.Private.CoreLib", "System.Threading", "TimerQueue", "TimerHandler", 100670705, 0);
     }
 
     ((InterpEntry_T3)wasm_native_to_interp_ftndescs [3].func) ((int*)wasm_native_to_interp_ftndescs [3].arg);
 }
 
 static UnmanagedExport wasm_native_to_interp_table[] = {
-    {"BackgroundJobHandler#0:System.Private.CoreLib:System.Threading:ThreadPool", 100670908, wasm_native_to_interp_System_Private_CoreLib_System_Threading_ThreadPool_BackgroundJobHandler},
-    {"EnumCalendarInfoCallback#2:System.Private.CoreLib:System.Globalization:CalendarData", 100669077, wasm_native_to_interp_System_Private_CoreLib_System_Globalization_CalendarData_EnumCalendarInfoCallback},
+    {"BackgroundJobHandler#0:System.Private.CoreLib:System.Threading:ThreadPool", 100670679, wasm_native_to_interp_System_Private_CoreLib_System_Threading_ThreadPool_BackgroundJobHandler},
+    {"EnumCalendarInfoCallback#2:System.Private.CoreLib:System.Globalization:CalendarData", 100668968, wasm_native_to_interp_System_Private_CoreLib_System_Globalization_CalendarData_EnumCalendarInfoCallback},
     {"GetFunctionPointer#6:System.Private.CoreLib:Internal.Runtime.InteropServices:ComponentActivator", 100663467, wasm_native_to_interp_System_Private_CoreLib_Internal_Runtime_InteropServices_ComponentActivator_GetFunctionPointer},
-    {"TimerHandler#0:System.Private.CoreLib:System.Threading:TimerQueue", 100670946, wasm_native_to_interp_System_Private_CoreLib_System_Threading_TimerQueue_TimerHandler}
+    {"TimerHandler#0:System.Private.CoreLib:System.Threading:TimerQueue", 100670705, wasm_native_to_interp_System_Private_CoreLib_System_Threading_TimerQueue_TimerHandler}
 };

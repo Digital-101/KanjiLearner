@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KanjiLearner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4af8647d433b0d80cd81998cb64f7c5bfd4e8727")]
 [assembly: System.Reflection.AssemblyProductAttribute("KanjiLearner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KanjiLearner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
