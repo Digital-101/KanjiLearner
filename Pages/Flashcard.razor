@@ -1,0 +1,140 @@
+@page "/flashcard"
+@using KanjiLearner.Models
+@using KanjiLearner.Services
+@inject KanjiService KanjiService
+
+<PageTitle>Kanji Learner - Flashcards</PageTitle>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>🃏 Kanji Flashcards</h2>
+            <p>Click on a card to flip it and see the details</p>
+            
+            @if (flashcards.Any())
+            {
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" 
+                         style="width: @(currentIndex * 100 / (float)flashcards.Count)%;">
+                        @currentIndex / @flashcards.Count
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (flashcards.Any())
+    {
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                @if (currentKanji != null)
+                {
+                    <KanjiCard Kanji="currentKanji" />
+                }
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <button class="btn btn-secondary me-2" @onclick="PreviousCard" disabled="@(currentIndex == 0)">
+                    ⬅️ Previous
+                </button>
+                <button class="btn btn-primary me-2" @onclick="ShuffleCards">
+                    🔀 Shuffle
+                </button>
+                <button class="btn btn-secondary" @onclick="NextCard" disabled="@(currentIndex >= flashcards.Count - 1)">
+                    Next ➡️
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group">
+                    @for (int i = 1; i <= 6; i++)
+                    {
+                        <button class="btn btn-outline-primary" @onclick="() => LoadGrade(i)">
+                            Grade @i
+                        </button>
+                    }
+                    <button class="btn btn-outline-success" @onclick="LoadRandom">
+                        🎲 Random
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            No flashcards available. Please try a different grade.
+            <button class="btn btn-primary ms-2" @onclick="LoadRandom">
+                Load Random
+            </button>
+        </div>
+    }
+</div>
+
+<style>
+    .progress {
+        height: 20px;
+    }
+    .progress-bar {
+        transition: width 0.3s ease;
+    }
+    .btn-group .btn {
+        margin: 2px;
+    }
+</style>
+
+@code {
+    private List<Kanji> flashcards = new();
+    private int currentIndex = 0;
+    private Kanji? currentKanji => flashcards.ElementAtOrDefault(currentIndex);
+
+    protected override void OnInitialized()
+    {
+        LoadRandom();
+    }
+
+    private void LoadGrade(int grade)
+    {
+        var kanji = KanjiService.GetKanjiByGrade(grade);
+        flashcards = kanji.Any() ? kanji : new List<Kanji>();
+        currentIndex = 0;
+        StateHasChanged();
+    }
+
+    private void LoadRandom()
+    {
+        flashcards = KanjiService.GetFlashcardSet(20);
+        currentIndex = 0;
+        StateHasChanged();
+    }
+
+    private void NextCard()
+    {
+        if (currentIndex < flashcards.Count - 1)
+        {
+            currentIndex++;
+            StateHasChanged();
+        }
+    }
+
+    private void PreviousCard()
+    {
+        if (currentIndex > 0)
+        {
+            currentIndex--;
+            StateHasChanged();
+        }
+    }
+
+    private void ShuffleCards()
+    {
+        var random = new Random();
+        flashcards = flashcards.OrderBy(x => random.Next()).ToList();
+        currentIndex = 0;
+        StateHasChanged();
+    }
+}

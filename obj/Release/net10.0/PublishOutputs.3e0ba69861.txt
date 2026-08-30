@@ -1,0 +1,3 @@
+C:\Users\DIGITS\Documents\KanjiLearner\publish\KanjiLearner.runtimeconfig.json
+C:\Users\DIGITS\Documents\KanjiLearner\publish\dotnet.js
+C:\Users\DIGITS\Documents\KanjiLearner\publish\web.config

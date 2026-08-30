@@ -1,0 +1,45 @@
+@using KanjiLearner.Models
+
+<div class="kanji-card @(IsFlipped ? "flipped" : "")" @onclick="ToggleFlip">
+    <div class="kanji-card-inner">
+        <div class="kanji-card-front">
+            <div class="kanji-character">@Kanji?.Character ?? "?"</div>
+            <div class="kanji-info">
+                <span class="grade-badge">Grade @Kanji?.Grade</span>
+                <span class="stroke-count">✏️ @Kanji?.StrokeCount strokes</span>
+            </div>
+        </div>
+        <div class="kanji-card-back">
+            <div class="kanji-details">
+                <h3>@Kanji?.Character</h3>
+                <p><strong>Romaji:</strong> @Kanji?.Romaji</p>
+                <p><strong>Meaning:</strong> @Kanji?.Meaning</p>
+                <p><strong>Kun-yomi:</strong> @Kanji?.KunYomi</p>
+                <p><strong>On-yomi:</strong> @Kanji?.OnYomi</p>
+                <p><strong>Radical:</strong> @Kanji?.Radical</p>
+                @if (Kanji?.Examples != null && Kanji.Examples.Any())
+                {
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        @foreach (var example in Kanji.Examples)
+                        {
+                            <li>@example</li>
+                        }
+                    </ul>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Kanji? Kanji { get; set; }
+
+    private bool IsFlipped { get; set; }
+
+    private void ToggleFlip()
+    {
+        IsFlipped = !IsFlipped;
+    }
+}

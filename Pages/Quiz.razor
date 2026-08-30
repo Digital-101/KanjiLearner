@@ -1,0 +1,210 @@
+@page "/quiz"
+@using KanjiLearner.Models
+@using KanjiLearner.Services
+@inject KanjiService KanjiService
+
+<PageTitle>Kanji Learner - Quiz</PageTitle>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>✍️ Kanji Quiz</h2>
+            <p>Match the kanji with its meaning or romaji</p>
+        </div>
+    </div>
+
+    @if (currentQuestion != null && !quizCompleted)
+    {
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <div class="card quiz-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Question @(currentQuestionIndex + 1) of @(questionCount)</h5>
+                        <div class="quiz-character display-1 text-center">@currentQuestion.Character</div>
+                        
+                        <div class="quiz-options mt-4">
+                            @foreach (var option in currentOptions)
+                            {
+                                <button class="btn btn-outline-primary w-100 mb-2 quiz-option" 
+                                        @onclick="() => SelectAnswer(option)"
+                                        disabled="@answerSelected">
+                                    @option
+                                </button>
+                            }
+                        </div>
+
+                        @if (answerSelected)
+                        {
+                            <div class="alert @(isCorrect ? "alert-success" : "alert-danger") mt-3">
+                                @if (isCorrect)
+                                {
+                                    <span>✅ Correct! The answer is "@currentQuestion.Meaning"</span>
+                                }
+                                else
+                                {
+                                    <span>❌ Incorrect. The correct answer is "@currentQuestion.Meaning"</span>
+                                }
+                            </div>
+                        }
+
+                        <div class="text-center mt-3">
+                            @if (currentQuestionIndex < questionCount - 1)
+                            {
+                                <button class="btn btn-primary" 
+                                        @onclick="NextQuestion"
+                                        disabled="@(!answerSelected)">
+                                    Next Question ➡️
+                                </button>
+                            }
+                            else if (answerSelected)
+                            {
+                                <button class="btn btn-success" @onclick="ShowResults">
+                                    Show Results 🏆
+                                </button>
+                            }
+                            <button class="btn btn-secondary ms-2" @onclick="StartNewQuiz">
+                                🔄 New Quiz
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            @if (quizCompleted)
+            {
+                <div>
+                    <h3>🎉 Quiz Complete!</h3>
+                    <p>You answered @correctAnswers out of @questionCount questions correctly!</p>
+                    <p>Score: @(questionCount > 0 ? (correctAnswers * 100 / (float)questionCount).ToString("F0") : "0")%</p>
+                    <button class="btn btn-primary mt-2" @onclick="StartNewQuiz">
+                        Start New Quiz
+                    </button>
+                </div>
+            }
+            else
+            {
+                <text>No quiz questions available. Please start a new quiz.</text>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    .quiz-character {
+        font-size: 6rem;
+        padding: 20px;
+    }
+    .quiz-card {
+        min-height: 400px;
+    }
+    .quiz-option {
+        font-size: 1.2rem;
+        padding: 15px;
+        transition: all 0.2s;
+    }
+    .quiz-option:hover:not(:disabled) {
+        transform: scale(1.02);
+        background-color: #f8f9fa;
+    }
+</style>
+
+@code {
+    private List<Kanji> quizKanji = new();
+    private Kanji? currentQuestion;
+    private List<string> currentOptions = new();
+    private int currentQuestionIndex = 0;
+    private int questionCount = 0;
+    private int correctAnswers = 0;
+    private bool answerSelected = false;
+    private bool isCorrect = false;
+    private bool quizCompleted = false;
+
+    protected override void OnInitialized()
+    {
+        StartNewQuiz();
+    }
+
+    private void StartNewQuiz()
+    {
+        try
+        {
+            quizKanji = KanjiService.GetFlashcardSet(10);
+            currentQuestionIndex = 0;
+            correctAnswers = 0;
+            answerSelected = false;
+            quizCompleted = false;
+            questionCount = quizKanji.Count;
+            if (questionCount > 0)
+            {
+                LoadQuestion();
+            }
+            else
+            {
+                quizCompleted = true;
+            }
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error starting quiz: {ex.Message}");
+            quizCompleted = true;
+        }
+    }
+
+    private void LoadQuestion()
+    {
+        if (currentQuestionIndex >= questionCount)
+        {
+            quizCompleted = true;
+            currentQuestion = null;
+            StateHasChanged();
+            return;
+        }
+
+        currentQuestion = quizKanji[currentQuestionIndex];
+        answerSelected = false;
+        isCorrect = false;
+        
+        // Generate options
+        var options = new List<string> { currentQuestion.Meaning };
+        var allKanji = KanjiService.GetAllKanji();
+        var allMeanings = allKanji
+            .Where(k => k.Id != currentQuestion.Id)
+            .Select(k => k.Meaning)
+            .Distinct()
+            .Take(3)
+            .ToList();
+
+        options.AddRange(allMeanings);
+        currentOptions = options.OrderBy(x => Guid.NewGuid()).ToList();
+        
+        StateHasChanged();
+    }
+
+    private void SelectAnswer(string selected)
+    {
+        if (answerSelected) return;
+        
+        answerSelected = true;
+        isCorrect = selected == currentQuestion?.Meaning;
+        if (isCorrect) correctAnswers++;
+        StateHasChanged();
+    }
+
+    private void NextQuestion()
+    {
+        currentQuestionIndex++;
+        LoadQuestion();
+        StateHasChanged();
+    }
+
+    private void ShowResults()
+    {
+        quizCompleted = true;
+        StateHasChanged();
+    }
+}
